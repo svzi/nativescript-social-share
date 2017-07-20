@@ -28,7 +28,7 @@ module.exports = {
 	shareText: function(text) {
 		share(text);
 	},
-	shareFile: function(text) {
-		share(NSURL.fileURLWithPath(text));
+	shareFile: function(filePath) {
+		share(NSURL.fileURLWithPath(filePath));
 	}
 };
