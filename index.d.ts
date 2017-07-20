@@ -14,3 +14,11 @@
     * @param {string} [subject] - The subject of the share *** ANDROID ONLY ***
     */
     export function shareText(text: string, subject?: string);
+
+
+     /**
+    * Share text.
+    * @param {FilePath} - The file to share.
+    * @param {string} [subject] - The subject of the share *** ANDROID ONLY ***
+    */
+    export function shareFile(filePath: string, subject?: string);
