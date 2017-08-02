@@ -17,8 +17,16 @@
 
 
      /**
-    * Share text.
+    * Share a file.
     * @param {FilePath} - The file to share.
     * @param {string} [subject] - The subject of the share *** ANDROID ONLY ***
     */
     export function shareFile(filePath: string, subject?: string);
+
+    
+     /**
+    * Share an audio file.
+    * @param {FilePath} - The file to share.
+    * @param {string} [subject] - The subject of the share *** ANDROID ONLY ***
+    */
+    export function shareAudio(filePath: string, subject?: string);

@@ -46,5 +46,17 @@ module.exports = {
 
 		intent.putExtra(android.content.Intent.EXTRA_TEXT, text);
 		share(intent, subject);
+	},
+	shareAudio: function(filePath, subject) {
+        var intent = getIntent("audio/mp3");
+        console.log('intent: ' + intent);
+
+        var javaFile = new java.io.File(filePath);
+        console.log('javaFile: ' + javaFile);
+
+		intent.putExtra(android.content.Intent.EXTRA_STREAM,
+			android.net.Uri.fromFile(javaFile));
+
+		share(intent, subject);
 	}
 };
